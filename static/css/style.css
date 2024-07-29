@@ -1,0 +1,48 @@
+body {
+    background-image: url("{% static 'images/bank_pic.jpg' %}");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+header {
+    background-color: #2325af;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #3335af;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

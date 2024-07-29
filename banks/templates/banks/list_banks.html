@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>Banks</h2>
+  <ul>
+    {% for bank in banks %}
+      <li><a href="{% url 'bank_details' bank.id %}">{{ bank.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

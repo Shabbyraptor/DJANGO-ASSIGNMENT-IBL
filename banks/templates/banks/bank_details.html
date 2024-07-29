@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h2>{{ bank.name }}</h2>
+  <p>{{ bank.description }}</p>
+  <h3>Branches</h3>
+  <ul>
+    {% for branch in branches %}
+      <li><a href="{% url 'branch_details' branch.id %}">{{ branch.name }}</a></li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'add_branch' bank.id %}">Add Branch</a>
+{% endblock %}
